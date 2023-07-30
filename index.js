@@ -55,7 +55,7 @@ const questions = [{
 ];
 
 function renderReadme(answers) {
-  return `<h1 align="center">${answers.name}</h1>
+  return `#${answers.name}
   ## Description
   ${answers.description}
 ## Table of Contents
@@ -68,7 +68,7 @@ function renderReadme(answers) {
 ## Installation
 ${answers.installation}
 ## Usage
-${answers.usage}
+${answers.usage}\n
   ![Screenshot](${answers.screenshot})
 ## Iicense
 ${answers.license}
@@ -77,8 +77,8 @@ ${answers.contributing}
 ## Tests
 ${answers.tests}
 ## Questions
-Github: ${answers.github}
-E-mail: ${answers.email}
+* Github: ${answers.github}
+* E-mail: ${answers.email}
   `
 }
 
@@ -90,7 +90,7 @@ inquirer
     fs.writeFile("README.md", readmeContent)
       .then(() => console.log('README.md created'))
       .catch((err) => console.error(err))
-    console.log("answers:", answers);
+    // console.log("answers:", answers);
 
   })
 // TODO: Create a function to write README file

@@ -1,6 +1,6 @@
-<h1 align="center">Reame creator</h1>
+#Readme creator
   ## Description
-  Create readme
+  This app help to create README.md file for Github
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -9,17 +9,18 @@
 - [Tests](#tests)
 - [Questions](#questions)
 ## Installation
-npm i
+npm install
 ## Usage
-answer questions
-  ![Screenshot](none)
+Just answer the questions
+
+  ![Screenshot](./assets/images/screenshot9.png)
 ## Iicense
 MIT
 ## How to contribute
-none
+N/A
 ## Tests
-tests
+N/A
 ## Questions
-Github: Unk171
-E-mail: 7353687@gmail.com
+* Github: https://github.com/Unk171
+* E-mail: 7353687@gmail.com
   
