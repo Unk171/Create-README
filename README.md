@@ -1,7 +1,7 @@
 # Readme creator
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Description
   This app help to create README.md file for Github
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -22,6 +22,6 @@ N/A
 ## Tests
 N/A
 ## Questions
-* Github:  https://github.com/Unk171
-* E-mail: 7353687@gmail.com
+* Github: https://github.com/Unk171
+* You can send your questions to my e-mail: 7353687@gmail.com
   

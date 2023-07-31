@@ -56,9 +56,9 @@ const questions = [{
 
 function renderReadme(answers) {
   return `# ${answers.name}
+  ${licenseBadge}
   ## Description
   ${answers.description}
-  ${licenseBadge}
   ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -79,7 +79,7 @@ ${answers.contributing}
 ${answers.tests}
 ## Questions
 * Github: ${answers.github}
-* E-mail: ${answers.email}
+* You can send your questions to my e-mail: ${answers.email}
   `
 }
 
