@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs/promises');
+let licenseBadge;
 const questions = [{
   type: 'input',
   name: 'name',
@@ -85,8 +86,6 @@ ${answers.tests}
 inquirer
   .prompt(questions)
   .then((answers) => {
-    console.log("answers:", answers.license);
-    let licenseBadge;
     if (answers.license === 'MIT') {
       licenseBadge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
     } else if (answers.license === 'APACHE 2.0') {
