@@ -50,15 +50,14 @@ const questions = [{
   type: 'input',
   name: 'email',
   message: 'What is your E-mail?'
-},
-
+}
 ];
 
 function renderReadme(answers) {
-  return `#${answers.name}
+  return `# ${answers.name}
   ## Description
   ${answers.description}
-## Table of Contents
+  ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Iicense](#Iicense)
@@ -85,13 +84,23 @@ ${answers.tests}
 inquirer
   .prompt(questions)
   .then((answers) => {
-
+    console.log("answers:", answers.license);
+    let licenseBadge;
+    if (answers.license === 'MIT') {
+      licenseBadge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+    } else if (answers.license === 'APACHE 2.0') {
+      licenseBadge = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+    } else if (answers.license === 'GPL 3.0') {
+      licenseBadge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)'
+    } else if (answers.license === 'BSD 3') {
+      licenseBadge = '[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)'
+    } else {
+      licenseBadge = '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)'
+    };
     const readmeContent = renderReadme(answers)
     fs.writeFile("README.md", readmeContent)
       .then(() => console.log('README.md created'))
       .catch((err) => console.error(err))
-    // console.log("answers:", answers);
-
   })
 // TODO: Create a function to write README file
 // function writeToFile(fileName, data) { }

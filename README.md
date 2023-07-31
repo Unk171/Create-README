@@ -1,7 +1,7 @@
-#Readme creator
+# Readme creator
   ## Description
   This app help to create README.md file for Github
-## Table of Contents
+  ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
 - [Iicense](#Iicense)
