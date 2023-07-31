@@ -18,9 +18,9 @@ Just answer the questions
 ## Iicense
 MIT
 ## How to contribute
-N/A
+N/A/
 ## Tests
-N/A
+N/A/
 ## Questions
 * Github: https://github.com/Unk171
 * You can send your questions to my e-mail: 7353687@gmail.com
