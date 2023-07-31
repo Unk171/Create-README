@@ -57,6 +57,7 @@ function renderReadme(answers) {
   return `# ${answers.name}
   ## Description
   ${answers.description}
+  ${licenseBadge}
   ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
