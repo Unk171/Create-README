@@ -24,4 +24,4 @@ N/A/
 ## Questions
 * Github: https://github.com/Unk171
 * You can send your questions to my e-mail: 7353687@gmail.com
-  
+* Video walkthrough: https://drive.google.com/file/d/18r4djrvun6tfHmiM1XSsnMTNK7uC4902/view
